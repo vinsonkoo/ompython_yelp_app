@@ -30,7 +30,7 @@ def get_businesses(location, term):
         businesses.append({"name": business.name, 
             "rating": business.rating, 
             "phone": business.phone,
-            "address": str(business.location.address)[1:-1]
+            "address": str(business.location.display_address)[1:-1]
         })
 
     return businesses[:3]
