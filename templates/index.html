@@ -12,7 +12,7 @@
                     {% for business in businesses %}
                         <h2>{{ business.name }}</h2>
                         <p>Address: {{ business.address.replace("'", "").replace(",", "") }}</p>
-                        <p>Stars: {{ business.rating }}</p>
+                        <p>Rating: {{ business.rating }} stars</p>
                         <p>Phone Number: {{ business.phone }}</p>
 
                     {% endfor %}
